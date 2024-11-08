@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-const { generateOtp } = require("../services/otpService");
+const { generateOtp } = require("../middleware/loginToken");
 
 // Generate OTP and save to user
 exports.generateOtp = async (req, res) => {

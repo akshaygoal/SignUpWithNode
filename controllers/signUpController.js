@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-const { generateOtp } = require("../services/otpService");
+const { generateOtp } = require("../middleware/otpService");
 const bcrypt = require("bcryptjs");
 const { validateEmail, validatePhone } = require("../middleware/validation");
 
